@@ -9,6 +9,6 @@ namespace SixOhFour.Models
 {
     public class ApplicationUser : IdentityUser
     {
-        private string DisplayName { get; set; }
+        public string DisplayName { get; set; }
     }
 }

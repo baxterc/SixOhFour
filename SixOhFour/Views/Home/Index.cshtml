@@ -15,38 +15,9 @@
         <p class="text-center">A summary of our goals. A link to a page talking about the origins of the organization and what we aim to do.</p>
     </div>
 </div>
-<div class="jumbotron my-1" id="mission">
-    <div class="container">
-        <h2 class="text-center">Upcoming Events</h2>
-        <p class="text-center">A carousel-style display of different upcoming events. Each event will have a link to a specific page.</p>
-    </div>
-</div>
-<div class="jumbotron my-1" id="news">
-    <h2 class="text-center">News & Updates</h2>
-    <p class="text-center">Panels containing the three most recent blog entries. The panels will contain a brief summary and a link to the actual entry.</p>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <h4 class="card-header">Entry 1</h4>
-                    <p class="card-body">Summary of Entry 1</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <h4 class="card-header">Entry 2</h4>
-                    <p class="card-body">Summary of Entry 1</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <h4 class="card-header">Entry 3</h4>
-                    <p class="card-body">Summary of Entry 1</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+@await Html.PartialAsync("~/Views/Partials/_FeaturedEvents.cshtml")
+
+@await Html.PartialAsync("~/Views/Partials/_FeaturedNews.cshtml")
 <div class="jumbotron my-1" id="contact">
     <div class="container">
         <h2 class="text-center">Contact</h2>
@@ -55,4 +26,4 @@
 
 <footer class="container">
     <p>© Charlie Baxter 2018</p>
-</footer>   
+</footer>

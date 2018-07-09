@@ -7,10 +7,12 @@ namespace SixOhFour.Models
 {
     public class Event
     {
-        private int EventId { get; set; }
-        private string Name { get; set; }
-        private DateTime CreatedDate { get; set; }
-        private DateTime EventDate { get; set; }
-        private string Description { get; set; }
+        public int EventId { get; set; }
+        public string Name { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public DateTime EventDate { get; set; }
+        public string Description { get; set; }
+        public string Location { get; set; }
+        public string Image { get; set; }
     }
 }

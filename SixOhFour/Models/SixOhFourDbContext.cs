@@ -9,13 +9,15 @@ namespace SixOhFour.Models
 {
     public class SixOhFourDbContext : IdentityDbContext<ApplicationUser>
     {
-        public virtual DbSet<Event> Comments { get; set; }
-        public virtual DbSet<Post> Posts { get; set; }
 
         public SixOhFourDbContext()
         {
 
         }
+
+        public virtual DbSet<Event> Comments { get; set; }
+        public virtual DbSet<Post> Posts { get; set; }
+        public virtual DbSet<Event> Events { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {

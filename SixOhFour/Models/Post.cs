@@ -9,11 +9,12 @@ namespace SixOhFour.Models
 {
     public class Post
     {
-        private int PostId { get; set; }
-        private string Title { get; set; }
-        private string Description { get; set; }
-        private string Content { get; set; }
-        private DateTime CreatedDate { get; set; }
+        public int PostId { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string Content { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public string Image { get; set; }
         [StringLength(64, MinimumLength = 2)]
         [RegularExpression("[a-z.0-9-]")]
         public string Slug { get; set; }
