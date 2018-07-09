@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SixOhFour.Models;
 
 namespace SixOhFour
 {
@@ -18,10 +19,13 @@ namespace SixOhFour
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSession();
+            services.AddMemoryCache();
             services.AddMvc();
+
+            //services.AddEntityFrameworkSqlServer().AddDbContext<SixOhFourDbContext>(options => );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
